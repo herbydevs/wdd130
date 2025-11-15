@@ -74,7 +74,7 @@ nav, p, section, article {
   left: 20px;
   right: 20px;
   padding: 16px;
-  background-color: rgba(10, 77, 104, 0.7);
+  background-color: rgba(8, 131, 149, 0.7);
   color: white;
 }
 
@@ -84,3 +84,10 @@ nav, p, section, article {
   width: 125px;
   margin-left: 16px;
 }
+
+/* Resize social media icons */
+.socialmedia img {
+    width: 40px; /* adjust this number if you want smaller or larger */
+    height: auto;
+}
+
