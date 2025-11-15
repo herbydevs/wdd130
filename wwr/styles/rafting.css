@@ -26,7 +26,7 @@ header, main, footer {
 /* Headings */
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #000; 
 }
 
 /* Basic spacing for common elements */
@@ -84,4 +84,10 @@ nav, p, section, article {
     float: right;
     width: 125px;
     margin-left: 8px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 16px;
 }
