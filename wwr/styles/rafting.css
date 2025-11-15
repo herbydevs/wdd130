@@ -1,17 +1,15 @@
 /* Universal selector reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0; padding: 0; box-sizing: border-box;
 }
 
 /* CSS Variables */
 :root {
-    --primary-color: #0a4d68;
-    --accent1-color: #088395;
-    --accent2-color: #05bfdb; /* used for hover effect */
-    --heading-font: "Georgia", serif;
-    --body-font: "Arial", sans-serif;
+   --primary-color: #0a4d68;
+   --accent1-color: #088395;
+   --accent2-color: #05bfdb;
+   --heading-font: "Georgia", serif;
+   --body-font: "Arial", sans-serif;
 }
 
 /* Body text styles */
