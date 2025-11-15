@@ -1,7 +1,5 @@
 /* Universal selector reset */
-* {
-  margin: 0; padding: 0; box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* CSS Variables */
 :root {
@@ -15,8 +13,8 @@
 /* Body text styles */
 body {
     font-family: var(--body-font);
-    color: 
-}
+    color: #000 
+} 
 
 
 /* Limit page width and center content */
