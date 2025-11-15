@@ -1,25 +1,26 @@
-:root {
-    --primary-color: #0a4d68;
-    --accent1-color: #088395;
-    --accent2-color: #05bfdb; /* optional, not used yet */
-    --heading-font: "Georgia", serif;
-    --body-font: "Arial", sans-serif;
-}
-
-/* Reset box model */
+/* Universal selector reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body text */
+/* CSS Variables */
+:root {
+    --primary-color: #0a4d68;
+    --accent1-color: #088395;
+    --accent2-color: #05bfdb; /* used for hover effect */
+    --heading-font: "Georgia", serif;
+    --body-font: "Arial", sans-serif;
+}
+
+/* Body text styles */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* Limit width and center page */
+/* Limit page width and center content */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
@@ -31,30 +32,28 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-/* Consistent margin and padding */
+/* Basic spacing for common elements */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-/* Remove underline from social media links */
+/* Social media links: remove underline */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* Social media icons */
-.socialmedia img {
-    width: 40px;
-    height: auto;
-    margin-right: 8px;
+/* Social media hover effect using --accent2-color */
+.socialmedia a:hover img {
+    filter: brightness(0) saturate(100%) invert(33%) sepia(81%) saturate(3780%) hue-rotate(170deg) brightness(95%) contrast(92%);
 }
 
-/* Hero container */
+/* Hero div */
 .hero {
     position: relative;
 }
 
-/* Hero image */
+/* Hero background image */
 .hero img {
     display: block;
     width: 100%;
@@ -68,8 +67,8 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.85;
-    background-color: rgba(8, 131, 149, 0.9);
+    opacity: 0.7;
+    background-color: var(--accent1-color);
     color: #fff;
 }
 
@@ -78,7 +77,7 @@ nav, p, section, article {
     position: absolute;
     bottom: 20px;
     left: 16px;
-    background-color: rgba(8, 131, 149, 0.7);
+    background-color: rgba(8, 131, 149, 0.7); /* semi-transparent */
     color: #fff;
     padding: 8px;
 }
@@ -87,5 +86,5 @@ nav, p, section, article {
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 12px;
+    margin-left: 8px;
 }
