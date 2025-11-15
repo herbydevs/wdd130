@@ -15,7 +15,7 @@
 /* Body text styles */
 body {
     font-family: var(--body-font);
-    color: #000;
+    color: var(--accent2-color);
 }
 
 
