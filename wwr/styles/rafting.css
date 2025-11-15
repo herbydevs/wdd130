@@ -26,8 +26,7 @@ header, main, footer {
 /* Headings */
 h1, h2 {
     font-family: var(--heading-font);
-    color: #fff; 
-    background-color: var(--accent1-color);
+    color: #000; 
 }
 
 /* Basic spacing for common elements */
