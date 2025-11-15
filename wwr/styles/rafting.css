@@ -85,6 +85,11 @@ nav, p, section, article {
     margin-left: 8px;
 }
 
+.socialmedia img {
+    width: 40px; /* adjust this number if you want smaller or larger */
+    height: auto;
+}
+
 footer {
     background-color: var(--primary-color);
     color: #fff;
