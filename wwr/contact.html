@@ -7,7 +7,7 @@
     <meta name="description"
         content="Learn about White Water Rafting Co., our mission, history, and thrilling rafting adventures.">
     <meta name="author" content="Adafa Ralph">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
     <title>Contact Us | White Water Rafting Co.</title>
 </head>
 
@@ -23,59 +23,72 @@
     </header>
 
     <main>
+        <!-- Address Section -->
         <div class="address-box">
-            <h1>Contact White Water Rafting Co.</h1>
+            <h1>White Water Rafting Co.</h1>
             <p>123 Main River Street</p>
             <p>+1 999 999 9999</p>
             <p>info@whitewater.com</p>
         </div>
 
+        <!-- Form Section -->
         <section class="form-section">
             <div class="map">
                 <!-- Map placeholder -->
             </div>
 
-            <form action="user-info">
-                <label for="name-box">Name</label>
-                <input type="text" name="name" id="name-box">
+            <div class="form-container">
+                <form action="user-info">
+                    <!-- Name -->
+                    <label for="name-box">Name</label>
+                    <input type="text" name="name" id="name-box">
 
-                <label for="email-box">Email</label>
-                <input type="text" name="email" id="email-box">
+                    <!-- Email -->
+                    <label for="email-box">Email</label>
+                    <input type="text" name="email" id="email-box">
 
-                <p>Message Purpose:</p>
-                <input type="radio" name="purpose" id="general" value="General Inquiry">
-                <label for="general">General Inquiry</label>
+                    <!-- Message Purpose (Radio Buttons) -->
+                    <p>Message Purpose:</p>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry">
+                    <label for="general">General Inquiry</label>
 
-                <input type="radio" name="purpose" id="reservation" value="Reservation Question">
-                <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
 
-                <input type="radio" name="purpose" id="website" value="Website Suggestion">
-                <label for="website">Website Suggestion</label>
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion">
+                    <label for="website">Website Suggestion</label>
 
-                <label for="message-box">Message</label>
-                <textarea name="message" id="message-box" placeholder="Type here"></textarea>
+                    <!-- Message -->
+                    <label for="message-box">Message</label>
+                    <textarea name="message" id="message-box" placeholder="Type here"></textarea>
 
-                <input type="checkbox" name="subscribe" id="sub-box" value="True">
-                <label for="sub-box">Subscribe to newsletter</label>
+                    <!-- Subscribe Checkbox -->
+                    <label for="sub-box">
+                        <input type="checkbox" name="subscribe" id="sub-box" value="True">
+                        Subscribe to newsletter
+                    </label>
 
-                <button type="submit" name="submit-button" id="submit-button">Get in Touch!</button>
-            </form>
+                    <!-- Submit Button -->
+                    <button type="submit" name="submit-button" id="submit-button">Get in Touch!</button>
+                </form>
+            </div>
         </section>
 
+        <!-- Team Section -->
         <section class="team-section">
             <h2>We Are Here To Serve You</h2>
             <div class="team">
                 <div class="employee">
-                    <img src="images/employee1.jpg" alt="Employee John Doe">
-                    <p class="e-name">John Doe</p>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <p class="e-name">Employee 1</p>
                 </div>
                 <div class="employee">
-                    <img src="images/employee2.jpg" alt="Employee Jane Smith">
-                    <p class="e-name">Jane Smith</p>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <p class="e-name">Employee 2</p>
                 </div>
                 <div class="employee">
-                    <img src="images/employee3.jpg" alt="Employee Mike Brown">
-                    <p class="e-name">Mike Brown</p>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <p class="e-name">Employee 3</p>
                 </div>
             </div>
         </section>
