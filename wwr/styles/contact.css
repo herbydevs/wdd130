@@ -1,6 +1,4 @@
-/* ------------------------------
-   Global
------------------------------- */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,11 +11,12 @@ h1, h2, h3, p {
     margin: 0;
 }
 
-/* ------------------------------
-   Header
------------------------------- */
+a {
+    text-decoration: none;
+}
+
 header {
-    background: #d7c8ff; /* Light purple like wireframe */
+    background: #d7c8ff; /* Light purple */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -44,9 +43,6 @@ header nav a {
     font-weight: bold;
 }
 
-/* ------------------------------
-   Address Block
------------------------------- */
 .address-box {
     text-align: center;
     margin: 40px auto;
@@ -62,9 +58,6 @@ header nav a {
     line-height: 1.4;
 }
 
-/* ------------------------------
-   Map + Form Section
------------------------------- */
 .form-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,23 +66,20 @@ header nav a {
     gap: 30px;
 }
 
-/* Map placeholder style */
+
 .map {
-    background: #e0e0e0 url("../images/map-placeholder.png") center/cover;
+    background: #e0e0e0 url("../images/map-placeholder.png") center/cover no-repeat;
     height: 300px;
     border: 1px solid #ccc;
 }
 
-/* ------------------------------
-   Form Styles
------------------------------- */
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-form p {
+form label {
     font-weight: bold;
     margin-bottom: 3px;
 }
@@ -121,9 +111,7 @@ input[type="radio"] {
     font-weight: bold;
 }
 
-/* ------------------------------
-   Team Section
------------------------------- */
+
 .team-section {
     width: 90%;
     margin: 40px auto 60px auto;
@@ -132,7 +120,7 @@ input[type="radio"] {
     padding: 30px 0;
 }
 
-.team-section h1 {
+.team-section h2 {
     margin-bottom: 30px;
     font-size: 24px;
 }
@@ -157,9 +145,7 @@ input[type="radio"] {
     font-weight: bold;
 }
 
-/* ------------------------------
-   Footer
------------------------------- */
+
 footer {
     background: #d7c8ff;
     padding: 20px;
@@ -176,4 +162,16 @@ footer nav.socialmedia {
 
 footer nav img {
     height: 32px;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .team {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

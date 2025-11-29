@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="white-water-logo">
+        <img src="images/z-splash.png" alt="White Water Rafting Co. Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -24,54 +24,60 @@
 
     <main>
         <div class="address-box">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Streeet</p>
+            <h1>Contact White Water Rafting Co.</h1>
+            <p>123 Main River Street</p>
             <p>+1 999 999 9999</p>
             <p>info@whitewater.com</p>
-
         </div>
 
         <section class="form-section">
             <div class="map">
-
+                <!-- Map placeholder -->
             </div>
 
-            <div class="form-section">
-                <form action="user-info">
-                    <p>Name</p>
-                    <input type="text" name="namebox" id="name-box">
-                    <p>Email</p>
-                    <input type="text" name="emailbox" id="email-box">
-                    <p>Message Purpose</p>
-                    <p>General Inquiry</p>
-                    <input type="checkbox" name="gernalinqiry" id="general-box">
-                    <p>Reservation question</p>
-                    <input type="checkbox" name="reservationquestion" id="reservation-box">
-                    <p>Website Suggestion</p>
-                    <input type="checkbox" name="websitesuggestion" id="website-box">
-                    <p>Message</p>
-                    <textarea>Type Here</textarea>
-                    <input type="checkbox" name="subscribe" id="sub-box" value="True">
-                    <button type="submit" name="submit-button" id="submit-button">Get in Touch!</button>
-                </form>
-            </div>
+            <form action="user-info">
+                <label for="name-box">Name</label>
+                <input type="text" name="name" id="name-box">
+
+                <label for="email-box">Email</label>
+                <input type="text" name="email" id="email-box">
+
+                <p>Message Purpose:</p>
+                <input type="radio" name="purpose" id="general" value="General Inquiry">
+                <label for="general">General Inquiry</label>
+
+                <input type="radio" name="purpose" id="reservation" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+
+                <input type="radio" name="purpose" id="website" value="Website Suggestion">
+                <label for="website">Website Suggestion</label>
+
+                <label for="message-box">Message</label>
+                <textarea name="message" id="message-box" placeholder="Type here"></textarea>
+
+                <input type="checkbox" name="subscribe" id="sub-box" value="True">
+                <label for="sub-box">Subscribe to newsletter</label>
+
+                <button type="submit" name="submit-button" id="submit-button">Get in Touch!</button>
+            </form>
         </section>
 
         <section class="team-section">
+            <h2>We Are Here To Serve You</h2>
             <div class="team">
-                <h1>We Are Here To Serve You</h1>
                 <div class="employee">
-                    <img src="./images/employee1.jpg">
-                    <p class="e-name">Employee</p>
+                    <img src="images/employee1.jpg" alt="Employee John Doe">
+                    <p class="e-name">John Doe</p>
                 </div>
                 <div class="employee">
-                    <img src="./images/employee2.jpg">
-                    <p class="e-name">Employee</p>
+                    <img src="images/employee2.jpg" alt="Employee Jane Smith">
+                    <p class="e-name">Jane Smith</p>
                 </div>
                 <div class="employee">
-                    <img src="./images/employee3.jpg">
-                    <p class="e-name">Employee</p>
+                    <img src="images/employee3.jpg" alt="Employee Mike Brown">
+                    <p class="e-name">Mike Brown</p>
                 </div>
+            </div>
         </section>
     </main>
 
