@@ -1,52 +1,68 @@
+/* Navigation */
 nav {
     background-color: burlywood;
     padding: 10px;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: black;
     padding: 5px 10px;
-    display: block;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Main Layout */
 main {
     width: 840px;
     max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
 }
 
+/* Sidebar */
 aside {
-    margin: 10px 0;
-    width: 10rem;
+    width: 12rem;
     border: 2px solid #000;
-    padding: 10px 0;
+    padding: 10px;
     background-color: burlywood;
     color: #000;
+    text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
+/* Main Content Images */
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid #000;
     padding: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 10px 0;
 }
 
+/* Typography */
 p {
     padding: 0;
+    margin: 10px 0;
 }
 
 h1 {
     color: darkblue;
+    margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: 20px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px;
 }
